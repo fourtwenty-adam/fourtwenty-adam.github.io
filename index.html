@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FourTwenty</title>
+        <link rel="shortcut icon" href="bin/img/leaf-logo.png">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex">
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="bin/slick/slick.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="bin/style.css">
+        <link rel="stylesheet" type="text/css" href="bin/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="bin/slick/slick-theme.css"/>
+    </head>
+
+
+    <body>
+        <div class="age-gate">
+            <img src="bin/img/leaf-logo.png" class="age-logo"/>
+            <h1>You must be 21 years old or over to view this site</h1>
+            <p>Please verify your age to enter.</p>
+            <p class="ageError">Sorry, you must be 21 or over to enter this website</p>
+            <div class="button" id="is21" onclick="ageGate()">I am 21 or older<div class="button__horizontal"></div>
+            <div class="button__vertical"></div></div>
+            <div class="button" id="not21" onclick="$('.ageError').show();">I am under 21<div class="button__horizontal"></div>
+            <div class="button__vertical"></div></div>
+        </div>
+        <canvas class="p-canvas-webgl" id="canvas-webgl"></canvas>
+        <!--<header class="header">
+            <nav class="header-inner">
+                <div class="header-logo-div">
+                    <a href="/"><img src="bin/img/leaf-logo.png" class="header-logo"/></a>
+                </div>
+                <div class="header-links">
+                    <ol>
+                        <li><a href="#about" class="ancor">About</a></li>
+                        <li><a href="#portfolio" class="ancor">Work</a></li>
+                        <li><a href="#contact" class="ancor">Contact</a></li>
+                    </ol>
+                </div>
+                <div class="hamburger" onclick="mobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </nav>
+            <div id="mySidebar" class="sidebar">
+                <a href="#about" onclick="$('.hamburger').click ();" class="ancor">About</a>
+                <a href="#portfolio" onclick="$('.hamburger').click ();" class="ancor">Work</a>
+                <a href="#contact" onclick="$('.hamburger').click ();" class="ancor">Contact</a>
+            </div>
+        </header>-->
+        <div class="landing">
+            <div class="landingText">
+                <img src="bin/img/white-logo.png" class="s1"/>
+                <div class="s2">
+                    <a href="https://www.instagram.com/fourtwenty.us/"><img src="bin/img/instagram.png"/></a>
+                    <a href="https://t.me/FourTwentyUS"><img src="bin/img/telegram.png"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="aboutText">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dui vel odio efficitur ornare. Morbi lacinia sollicitudin venenatis. In eget bibendum neque. Suspendisse ornare pharetra feugiat. Suspendisse a nibh vitae ex egestas vestibulum sed nec massa. Aliquam sit amet justo eu urna feugiat venenatis ut sed elit. Mauris congue magna urna, eget pulvinar velit lacinia non. Mauris sed egestas erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. In volutpat fermentum augue a porttitor. Aliquam purus libero, egestas ac lacus eget, varius tincidunt velit. Mauris eu quam quis justo convallis facilisis.
+                    <br><br>
+                    Sed nunc ligula, semper non lorem eu, porttitor aliquet nunc. Maecenas ut justo purus. Suspendisse semper at augue ac sagittis. Vestibulum volutpat eros ac ante vulputate, nec porta enim pharetra. Aenean eu magna nec odio auctor vestibulum. Curabitur mi magna, pharetra sit amet justo eget, malesuada aliquam turpis. Nam eu mattis tellus, et finibus diam. Quisque vitae massa leo. Quisque pharetra purus eros, a placerat nisl blandit vitae. Ut pretium suscipit lorem quis dapibus. Proin nisi erat, facilisis sed iaculis ac, hendrerit non ligula. Donec quis nibh eu enim dapibus tempus eu et lorem. Nam vitae sapien tincidunt, sollicitudin diam ut, iaculis lectus. Cras quis ultrices justo, sit amet scelerisque erat. Integer convallis porttitor enim, ac bibendum sapien euismod vitae.</p>
+            </div>
+        </div>
+        <script src="bin/scripts.js"></script>
+    </body>
+</html>
+        
+    
