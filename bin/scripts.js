@@ -38,10 +38,10 @@ function ageGate() {
 }
 
 $(document).ready(function(){
-  if(getCookie("agegate") != "open"){
-    $('.age-gate').css("display", "flex");
-  } else {
+  if(getCookie("agegate") == "open"){
     openingReveal();
+  } else {
+    $('.age-gate').css("display", "flex");
   }
     if ($(window).width() > 751) {
         ScrollReveal().reveal('.reveal', { origin: 'bottom', distance: '100px', duration: 2000});
