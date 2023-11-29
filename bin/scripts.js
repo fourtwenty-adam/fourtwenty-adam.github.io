@@ -28,7 +28,7 @@ function getCookie(cname) {
 
 function openingReveal(){
   $('.s1').css("display", "block");
-  $('.s2').css("display", "block");
+  $('.s2').css("display", "flex");
   ScrollReveal().reveal('.s1', { origin: 'bottom', distance: '100px', duration: 2000});
   ScrollReveal().reveal('.s2', { origin: 'bottom', distance: '100px', duration: 2000, delay: 600});
 }
