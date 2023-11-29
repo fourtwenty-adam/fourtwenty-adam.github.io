@@ -35,7 +35,7 @@ function ageGate() {
 
 $(document).ready(function(){
   if(getCookie("agegate") == "open"){
-    ageGate();
+    $('.age-gate').hide();
   }
     if ($(window).width() > 751) {
         ScrollReveal().reveal('.reveal', { origin: 'bottom', distance: '100px', duration: 2000});
