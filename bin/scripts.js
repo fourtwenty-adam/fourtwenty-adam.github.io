@@ -26,23 +26,26 @@ function getCookie(cname) {
   return "";
 }
 
-function ageGate() {
-  $('.age-gate').fadeOut();
+function openingReveal(){
   ScrollReveal().reveal('.s1', { origin: 'bottom', distance: '100px', duration: 2000});
   ScrollReveal().reveal('.s2', { origin: 'bottom', distance: '100px', duration: 2000, delay: 600});
+}
+
+function ageGate() {
+  $('.age-gate').fadeOut();
+  openingReveal();
   setCookie("agegate", "open", 30);
 }
 
 $(document).ready(function(){
-  if(getCookie("agegate") == "open"){
-    $('.age-gate').hide();
+  if(getCookie("agegate") != "open"){
+    $('.age-gate').css("display", "flex");
+  } else {
+    openingReveal();
   }
     if ($(window).width() > 751) {
         ScrollReveal().reveal('.reveal', { origin: 'bottom', distance: '100px', duration: 2000});
     }
-    //ScrollReveal().reveal('.s1', { origin: 'bottom', distance: '100px', duration: 2000});
-    //ScrollReveal().reveal('.s2', { origin: 'bottom', distance: '100px', duration: 2000, delay: 600});
-    //ScrollReveal().reveal('.s3', { origin: 'bottom', distance: '100px', duration: 2000, delay: 1200});
 
      $('.slideshow').slick({
         centerMode: true,
